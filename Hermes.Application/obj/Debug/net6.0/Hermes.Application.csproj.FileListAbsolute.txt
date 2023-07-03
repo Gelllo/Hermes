@@ -1,0 +1,15 @@
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\bin\Debug\net6.0\Hermes.Application.deps.json
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\bin\Debug\net6.0\Hermes.Application.dll
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\bin\Debug\net6.0\Hermes.Application.pdb
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\bin\Debug\net6.0\Hermes.Domain.dll
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\bin\Debug\net6.0\Hermes.Domain.pdb
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.csproj.AssemblyReference.cache
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.AssemblyInfoInputs.cache
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.AssemblyInfo.cs
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.csproj.CoreCompileInputs.cache
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.csproj.CopyComplete
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.dll
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\refint\Hermes.Application.dll
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\Hermes.Application.pdb
+C:\Users\Gelu\Desktop\Licenta\Hermes\Hermes.Application\obj\Debug\net6.0\ref\Hermes.Application.dll

@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes", "Hermes\Hermes.csproj", "{05D80259-1174-4021-8B74-531B67ECED75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hermes.Web", "Hermes\Hermes.Web.csproj", "{05D80259-1174-4021-8B74-531B67ECED75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Domain", "Hermes.Domain\Hermes.Domain.csproj", "{4B96469F-B5C2-4447-9388-4D280D3A2B75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Application", "Hermes.Application\Hermes.Application.csproj", "{09C419FE-A886-4855-BB9E-629192B83C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Infrastructure", "Hermes.Infrastructure\Hermes.Infrastructure.csproj", "{30271725-1B93-4FA3-947C-D5503ACCB392}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{05D80259-1174-4021-8B74-531B67ECED75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05D80259-1174-4021-8B74-531B67ECED75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05D80259-1174-4021-8B74-531B67ECED75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B96469F-B5C2-4447-9388-4D280D3A2B75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B96469F-B5C2-4447-9388-4D280D3A2B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B96469F-B5C2-4447-9388-4D280D3A2B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B96469F-B5C2-4447-9388-4D280D3A2B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C419FE-A886-4855-BB9E-629192B83C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C419FE-A886-4855-BB9E-629192B83C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C419FE-A886-4855-BB9E-629192B83C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C419FE-A886-4855-BB9E-629192B83C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30271725-1B93-4FA3-947C-D5503ACCB392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30271725-1B93-4FA3-947C-D5503ACCB392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30271725-1B93-4FA3-947C-D5503ACCB392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30271725-1B93-4FA3-947C-D5503ACCB392}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,14 @@
+﻿using Hermes.Application.Requests;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Hermes.Application.Responses.MailRequest
+{
+    public record GetMailRequestsForPatientResponse
+    {
+        public IEnumerable<MailRequestDTO> MailRequests { get; set; }
+    }
+}

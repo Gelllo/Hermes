@@ -1,0 +1,129 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hermes.Application/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "FastEndpoints": "5.13.0",
+          "Hermes.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Hermes.Application.dll": {}
+        }
+      },
+      "AutoMapper/12.0.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.1.0"
+          }
+        }
+      },
+      "FastEndpoints/5.13.0": {
+        "dependencies": {
+          "FastEndpoints.Attributes": "5.13.0",
+          "FastEndpoints.Messaging.Core": "5.13.0",
+          "FluentValidation": "11.5.2"
+        },
+        "runtime": {
+          "lib/net6.0/FastEndpoints.dll": {
+            "assemblyVersion": "5.13.0.0",
+            "fileVersion": "5.13.0.0"
+          }
+        }
+      },
+      "FastEndpoints.Attributes/5.13.0": {
+        "runtime": {
+          "lib/netstandard2.0/FastEndpoints.Attributes.dll": {
+            "assemblyVersion": "5.13.0.0",
+            "fileVersion": "5.13.0.0"
+          }
+        }
+      },
+      "FastEndpoints.Messaging.Core/5.13.0": {
+        "runtime": {
+          "lib/netstandard2.1/FastEndpoints.Messaging.Core.dll": {
+            "assemblyVersion": "5.13.0.0",
+            "fileVersion": "5.13.0.0"
+          }
+        }
+      },
+      "FluentValidation/11.5.2": {
+        "runtime": {
+          "lib/net6.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.5.2.0"
+          }
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Hermes.Domain/1.0.0": {
+        "runtime": {
+          "Hermes.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hermes.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/12.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "path": "automapper/12.0.1",
+      "hashPath": "automapper.12.0.1.nupkg.sha512"
+    },
+    "FastEndpoints/5.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8krMAIN/0ZBFY8rXFBjjYg55qiR2oCfYpX0BZUofCYpyV/m2+5pHH0si205J5+e/COPBdMsNa9QgqQaT6P9WRA==",
+      "path": "fastendpoints/5.13.0",
+      "hashPath": "fastendpoints.5.13.0.nupkg.sha512"
+    },
+    "FastEndpoints.Attributes/5.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fLD3jHj/ymCCaey1/1z+uadQD4c/MzP7ge6DLtQHVgwmAetwjv4ABtX8d0vgVPh2rRH8vmSKKnuWPBpuLSVptg==",
+      "path": "fastendpoints.attributes/5.13.0",
+      "hashPath": "fastendpoints.attributes.5.13.0.nupkg.sha512"
+    },
+    "FastEndpoints.Messaging.Core/5.13.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fIVomTwOwlTyRKIwc6kXz67/oLPEPu6bSZPVYjsgmyNHeu0+QFXoMCUjNUUp/0ZVZJgJwMhdR93Vgfp45bRKRQ==",
+      "path": "fastendpoints.messaging.core/5.13.0",
+      "hashPath": "fastendpoints.messaging.core.5.13.0.nupkg.sha512"
+    },
+    "FluentValidation/11.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kj/hW/iusp2zq1Vt1YPLgDj6UG0DhoJXGkLwjLwm3j7vUtRF8DVA5vHJfItG3BxDjLWJUR2pvw8fK7rnuysZNA==",
+      "path": "fluentvalidation/11.5.2",
+      "hashPath": "fluentvalidation.11.5.2.nupkg.sha512"
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Hermes.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

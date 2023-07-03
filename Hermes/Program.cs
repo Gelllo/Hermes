@@ -1,43 +1,61 @@
+using System.Configuration;
+using FastEndpoints;
+using FastEndpoints.Swagger;
+using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
+using Hermes.Infrastracture.Database;
+using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata;
+using Hermes.Application;
+using Serilog;
+using Serilog.Sinks.MSSqlServer;
+using System.Collections.ObjectModel;
+using System.Data;
+using System.Text;
+using Hermes.Infrastracture.Database.Dispatchers;
+using Hermes.Web.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using ConfigurationManager = Microsoft.Extensions.Configuration.ConfigurationManager;
+using Microsoft.AspNetCore.Builder;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Configuration.SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+ConfigurationManager configuration = builder.Configuration;
+
+builder.ConfigureSerilog();
+
+builder.ConfigureDatabase();
+
+builder.Services.AddFastEndpoints();
+builder.Services.AddSwaggerDoc();
+
+builder.Services.ConfigureAutoMapper();
+
+builder.Services.ConfigureHandlers();
+
+builder.Services.AddHttpClient();
+
+builder.Services.ConfigureSecurity(configuration);
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseFastEndpoints();
+app.UseCors("CorsPolicy");
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerGen();
+    app.UseSwaggerUi3();
 }
 
 app.UseHttpsRedirection();
 
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
-
-app.MapGet("/weatherforecast", () =>
-{
-    var forecast = Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateTime.Now.AddDays(index),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.Run();
-
-internal record WeatherForecast(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
